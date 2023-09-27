@@ -47,9 +47,6 @@ var setBackgroundColorById = (id, color) => {
     document.getElementById(id).style = "background-color: " + color;
 }
 
-var colorInput = document.getElementById("input").value;
 var mouseOverFunction = (el) => {
-    el.style.background = colorInput;
+    el.style.background = document.getElementById("input").value;
 }
-
-
